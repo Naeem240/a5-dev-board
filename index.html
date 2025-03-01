@@ -26,7 +26,7 @@
     </style>
 </head>
 
-<body class="bg-[#F4F7FF]">
+<body class="bg-[#15ceb7]">
     <!-- Header Start -->
     <header class="container mx-auto">
         <div class="navbar bg-base-100 shadow-sm rounded-lg p-3">
@@ -41,12 +41,12 @@
                     <li>
                         <figure class="bg-gray-100 rounded-xl">
                             <img class="w-5" src="assets/checkbox.png" alt="checkbox">
-                            <figcaption class="text-xl font-bold">
+                            <figcaption id="total-task" class="text-xl font-bold">
                                 23
                             </figcaption>
                         </figure>
                     </li>
-                    <li>
+                    <li id="theme-changer">
                         <figure class="bg-gray-50 rounded-full ml-4">
                             <img class="w-8" src="assets/theme-btn.png" alt="Theme">
                         </figure>
@@ -83,7 +83,7 @@
                     <figure>
                         <img src="assets/calender.png" alt="calender">
                     </figure>
-                    <p>Wed,<br> <span class="font-bold">Jul 28 2025</span></p>
+                    <p><span id="day"></span><br> <span id="month-year" class="font-bold"></span></p>
                 </div>
             </div>
             <!-- Top-Card End -->
