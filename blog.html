@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-[#F4F7FF]">
+    <!-- Header Start -->
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100 shadow-sm rounded-xl">
+            <div class="cursor-pointer flex items-center flex-1">
+                <figure>
+                    <img class="w-8" src="assets/logo.png" alt="Logo">
+                </figure>
+                <a class="ml-1 text-xl" href="#">Dev<span class="font-bold">Board</span></a>
+            </div>
+            <div class="flex-none">
+                <button class="btn bg-[#3752FD] text-white my-4 rounded-lg"><a href="index.html">Back To Desk</a></button>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
+    <main class="container mx-auto mt-2">
+        <h1 class="text-center font-bold text-xl my-2">Blogs</h1>
+        <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What are the different ways to select an element in the DOM?</h1>
+            <p>JavaScript provides several methods to select elements within the Document Object Model (DOM). Here are the most common ones</p>
+        </div>
+        <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is the difference between innerHTML, innerText, and textContent?</h1>
+            <p>These properties are used to access and modify the text content of an element, but they differ in how they handle HTML and whitespace</p>
+        </div>
+        <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is event delegation in the DOM?</h1>
+            <p>Event delegation is a technique where you attach a single event listener to a parent element, rather than attaching individual listeners to each child element. This listener can then handle events that originate from any of its descendants.</p>
+        </div>
+        <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is event bubbling in the DOM?</h1>
+            <p>Event bubbling is the process where an event that occurs on a DOM element propagates up the DOM tree to its parent elements.</p>
+        </div>
+        <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">How do you create, add, and remove elements using JavaScript?</h1>
+            <p>Here's how to manipulate elements dynamically:
+
+                Creating Elements:
+                document.createElement(tagName): Creates a new element with the specified tag name.
+                Example: const newDiv = document.createElement("div");</p>
+        </div>
+    </main>
+    <!-- Main Content End -->
+
+
+</body>
+
+</html>
