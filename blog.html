@@ -27,7 +27,8 @@
                 <a class="ml-1 text-xl" href="#">Dev<span class="font-bold">Board</span></a>
             </div>
             <div class="flex-none">
-                <button class="btn bg-[#3752FD] text-white my-4 rounded-lg"><a href="index.html">Back To Desk</a></button>
+                <button class="btn bg-[#3752FD] text-white my-4 rounded-lg"><a href="index.html">Back To
+                        Desk</a></button>
             </div>
         </div>
     </header>
@@ -37,28 +38,47 @@
     <main class="container mx-auto mt-2">
         <h1 class="text-center font-bold text-xl my-2">Blogs</h1>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
-            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What are the different ways to select an element in the DOM?</h1>
-            <p>JavaScript provides several methods to select elements within the Document Object Model (DOM). Here are the most common ones</p>
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What are the different ways to
+                select an element in the DOM?</h1>
+            <h1>We can select an element in the DOM by several ways. For Example:</h1>
+            <ul class="list-disc ml-8">
+                <li>Using getElementById</li>
+                <li>Using getElementsByClassName</li>
+                <li>Using getElementsByTagName</li>
+                <li>Using querySelector</li>
+                <li>Using querySelectorAll</li>
+            </ul>
         </div>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
-            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is the difference between innerHTML, innerText, and textContent?</h1>
-            <p>These properties are used to access and modify the text content of an element, but they differ in how they handle HTML and whitespace</p>
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is the difference between
+                innerHTML, innerText, and textContent?</h1>
+            <ul class="list-disc ml-8">
+                <li><b>InnerHTML:</b> Using innerHTML allows you to see exactly what’s in the HTML markup contained within a string, including elements like spacing, line breaks and formatting.</li>
+                <li><b>InnerText:</b> This approximates the “rendered” text content of a node and is aware of styling and CSS. It’s most effective when you only need to see what’s in the element without the formatting.</li>
+                <li><b>TextContent:</b> This retrieves and sets the content of the tag as plain text. It’s most effective when you want to see what’s in an element, plus styling.</li>
+            </ul>
         </div>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
-            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is event delegation in the DOM?</h1>
-            <p>Event delegation is a technique where you attach a single event listener to a parent element, rather than attaching individual listeners to each child element. This listener can then handle events that originate from any of its descendants.</p>
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is event delegation in the
+                DOM?</h1>
+            <p>Event delegation in the DOM is a technique where a single event listener is attached to a parent element, rather than individual listeners on each child element. This leverages event bubbling, where events originating from child elements propagate up the DOM tree to their parent.</p>
         </div>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
-            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is event bubbling in the DOM?</h1>
-            <p>Event bubbling is the process where an event that occurs on a DOM element propagates up the DOM tree to its parent elements.</p>
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is event bubbling in the DOM?
+            </h1>
+            <p>Event bubbling in the DOM is the process by which an event, when triggered on a specific element, propagates upwards through the DOM tree. Starting at the target element where the event originated, the event triggers any attached event listeners, then travels to its immediate parent element, triggering those listeners as well. This upward propagation continues through each ancestor element, effectively "bubbling" up the hierarchy until it reaches the root of the DOM. </p>
         </div>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
-            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">How do you create, add, and remove elements using JavaScript?</h1>
-            <p>Here's how to manipulate elements dynamically:
-
-                Creating Elements:
-                document.createElement(tagName): Creates a new element with the specified tag name.
-                Example: const newDiv = document.createElement("div");</p>
+            <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">How do you create, add, and remove
+                elements using JavaScript?</h1>
+            <h1>
+                JavaScript provides powerful tools for dynamically manipulating the DOM, allowing you to create, add, and remove HTML elements. Here's a breakdown of the key methods:
+            </h1>
+            <ul class="list-disc ml-8">
+                <li>Creating Elements by "document.createElement(tagName)"</li>
+                <li>Adding Elements using "element.appendChild(childNode)"</li>
+                <li>Removing Elements by using "parentNode.removeChild(childNode)"</li>
+            </ul>
         </div>
     </main>
     <!-- Main Content End -->
